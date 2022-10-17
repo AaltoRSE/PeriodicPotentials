@@ -7,7 +7,7 @@
       <tr v-for ="(potential,key) in availablePotentials" :key="key">
         <td>{{potential.name}}</td>
         <td>{{potential.elements}}</td>
-        <td><a v-bind:href="potential.zenodourl"><img v-bind:src="potential.zenodoimg" alt="DOI"></a></td>
+        <td><a v-bind:href="potential.zenodourl"><img v-bind:src="potential.zenodoimg" v-bind:alt="potential.zenodoalt"></a></td>
         <td><a v-bind:href="potential.url">{{potential.ref}}</a></td>
       </tr>
     </table> 
